@@ -1,0 +1,160 @@
+body {
+    background: #e4e4e4 !important;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 5rem;
+    }
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #ffffff;
+}
+
+.sidebar .nav-link.active {
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar {
+    position: fixed;
+}
+
+.navbar-brand {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+    top: 0.25rem;
+    right: 1rem;
+}
+
+/* navbar baru */
+
+.user-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-left: 10px;
+}
+
+.has-search .form-control {
+    width: 400px;
+    height: 50px;
+    padding-left: 50px;
+    border-radius: 50px;
+    background-color: rgb(224, 224, 224);
+    border: none;
+}
+
+.form-control:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    pointer-events: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-user {
+    filter: drop-shadow(0px 0px 2px grey);
+}
+
+.dropdown-menu {
+    margin-top: 8px !important;
+    margin-left: -90px;
+    background-color: white;
+}
+
+.dash-col {
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    background: white;
+    width: 38vw;
+    margin-block: 10px;
+    margin-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.dash-col-detail {
+    line-height: 1rem;
+}
+
+.dash-col-detail h1 {
+    font-size: 3.5rem;
+}
